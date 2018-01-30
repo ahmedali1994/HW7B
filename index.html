@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Homework 7b</h1>
+    <script>
+        function startProcess()
+
+        {
+            var i = 1;
+            var volumeSize;
+            
+            
+            while (i < 10)
+            {
+                var length = i + 2;
+                var width = i + 3;
+                var height = i + 4;
+                
+                var myVolume = getVolume(length, width, height);
+                
+
+
+                if (myVolume >= 60 && myVolume <= 70)
+
+                {
+                    volumeSize = ('Small');
+                }
+
+                else if (myVolume >= 60 && myVolume <= 70)
+
+                {
+                    volumeSize = ('Medium');
+                }
+
+                else if (myVolume >= 60 && myVolume <= 70)
+
+                {
+                    volumeSize = ('Large');
+                }
+
+                else if (myVolume >= 60 && myVolume <= 70)
+
+                {
+                     volumeSize = ('extra large');
+                }
+
+                else
+
+                {
+                    volumeSize = ('');
+                }
+                
+                
+
+                switch (volumeSize)
+             
+                {
+                    case 'Small':
+                        document.write('small' + myVolume + "<br>");
+                        break;
+
+                    case 'Medium':
+                        document.write('Medium' + myVolume + "<br>");
+                        break;
+                    case 'Large':
+                        document.write('Large' + myVolume + "<br>");
+                        break;
+                    case 'extra large':
+                        document.write('Extra large ' + myVolume + "<br>");
+                        break;
+                    default:
+                        document.write('above extra large' + myVolume + "<br>");
+                        break;
+                }
+                i++;
+
+            }  
+        }    
+        
+        function getVolume(length, width, height) {
+            var result = length * width * height;
+            return result;
+        }
+        startProcess();
+    </script>
+</body>
+</html>
